@@ -53,10 +53,7 @@ megalist2 = string.ascii_uppercase
 megaultralist=zip(megalist, megalist2)
 #print(list(megaultralist))
 
-a=1
-b=2
-c=3
-
+a=sentence.count('a')
 
         
 
