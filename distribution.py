@@ -36,9 +36,28 @@ Notice about this example:
   in the text and they are listed in the output in alphabetical order.
 * Letters that do not occur in the text are not listed in the output at all.
 """
-
+"""What I want to do is make a list of uppercase and lowercase lists. 
+Then make a thing that takes the list of upper/lowercase letters and creates a variable for each letter with the number of times it shows up. 
+Then create a list of those variables (which have numbers of letters in the sentence attached to them). Sort them by amount. 
+"""
+'''
 sentence = input("Please enter a string of text (the bigger the better): ")
-print("The distribution of characters in "{0}" is: ")
+print('The distribution of characters in "{0}" is: '.format(sentence))
+'''
+import string
+
+sentence= "aA"
+
+megalist= string.ascii_lowercase
+megalist2 = string.ascii_uppercase
+megaultralist=zip(megalist, megalist2)
+#print(list(megaultralist))
+
+for a in sentence:
+    if a is
+
+
+
 
 
 
