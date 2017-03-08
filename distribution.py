@@ -38,4 +38,7 @@ Notice about this example:
 """
 
 sentence = input("Please enter a string of text (the bigger the better): ")
-print("The distribution of characters in "{0}"
+print("The distribution of characters in "{0}" is: ")
+
+
+
