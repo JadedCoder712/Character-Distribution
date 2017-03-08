@@ -53,8 +53,14 @@ megalist2 = string.ascii_uppercase
 megaultralist=zip(megalist, megalist2)
 #print(list(megaultralist))
 
-for a in sentence:
-    if a is
+a=1
+b=2
+c=3
+
+
+        
+
+        
 
 
 
