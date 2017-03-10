@@ -46,14 +46,18 @@ print('The distribution of characters in "{0}" is: '.format(sentence))
 '''
 import string
 
-sentence= "aA"
+sentence= "AThe input has failed"
+bignumber=len(sentence)
+numbers=range(1, int(bignumber))
 
+sentencelist=list(sentence)
 megalist= string.ascii_lowercase
 megalist2 = string.ascii_uppercase
 megaultralist=zip(megalist, megalist2)
 #print(list(megaultralist))
 
-a=sentence.count('a')
+sentence1=[x.lower() for x in sentencelist]
+print(sentence1)
 
         
 
