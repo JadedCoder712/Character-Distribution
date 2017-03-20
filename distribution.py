@@ -58,12 +58,14 @@ finallist=[]
 
 sentence1=[x.lower() for x in sentencelist]
 
+#the actual program:
 
 for letter in megalist:
     number=sentence1.count(letter)
     variables=(number, letter)
     finallist.append(variables)
-    
+
+
 finallist.sort()
 finallistreversed=list(reversed(finallist))
 
