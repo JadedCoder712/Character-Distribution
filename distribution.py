@@ -40,10 +40,10 @@ Notice about this example:
 Then make a thing that takes the list of upper/lowercase letters and creates a variable for each letter with the number of times it shows up. 
 Then create a list of those variables (which have numbers of letters in the sentence attached to them). Sort them by amount. 
 """
-'''
+
 sentence = input("Please enter a string of text (the bigger the better): ")
 print('The distribution of characters in "{0}" is: '.format(sentence))
-'''
+
 
 import string
 
@@ -65,8 +65,8 @@ for letter in megalist:
     variables=(number, letter)
     finallist.append(variables)
 finallist.sort()
-
-for x,c in finallist:
+finallistreversed=list(reversed(finallist))
+for x,c in finallistreversed:
     if x is not int(0):
         print(x*c)
 
