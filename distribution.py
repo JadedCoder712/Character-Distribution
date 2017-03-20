@@ -65,6 +65,7 @@ for letter in megalist:
     variables=(number, letter)
     finallist.append(variables)
 finallist.sort()
+
 for x,c in finallist:
     if x is not int(0):
         print(x*c)
