@@ -47,7 +47,7 @@ print('The distribution of characters in "{0}" is: '.format(sentence))
 
 import string
 
-sentence= "CCCABBBBBEDD"
+
 bignumber=len(sentence)
 numbers=range(1, int(bignumber))
 
