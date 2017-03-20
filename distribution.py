@@ -62,10 +62,14 @@ sentence1=[x.lower() for x in sentencelist]
 
 for letter in megalist:
     number=sentence1.count(letter)
-    #print(number * letter)
     variables=(number, letter)
-    print(variables)
-    finallist
+    finallist.append(variables)
+finallist.sort()
+for x,c in finallist:
+    if x is not int(0):
+        print(x*c)
+
+
     
     
     
