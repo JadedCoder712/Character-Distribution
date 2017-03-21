@@ -44,9 +44,8 @@ Then create a list of those variables (which have numbers of letters in the sent
 sentence = input("Please enter a string of text (the bigger the better): ")
 print('The distribution of characters in "{0}" is: '.format(sentence))
 
-
 import string
-
+from operator import itemgetter, attrgetter, methodcaller
 
 bignumber=len(sentence)
 numbers=range(1, int(bignumber))
@@ -54,8 +53,8 @@ numbers=range(1, int(bignumber))
 sentencelist=list(sentence)
 megalist= string.ascii_lowercase
 
-finallist=[]
-
+finallist=[]  
+ 
 sentence1=[x.lower() for x in sentencelist]
 
 #the actual program:
@@ -64,14 +63,17 @@ for letter in megalist:
     number=sentence1.count(letter)
     variables=(number, letter)
     finallist.append(variables)
+    
+finallist1=sorted(finallist, key=itemgetter(1), reverse=True)
+
+finallist2=sorted(finallist1, key=itemgetter(0))
 
 
-finallist.sort()
-finallistreversed=list(reversed(finallist))
+#finallistreversed=list(reversed(finallist1))
 
-for x,c in finallistreversed:
-    if x is not int(0):
-        print(x*c)
+for x,c in finallist2:
+        if x is not int(0):
+            print(x*c)
 
 
     
