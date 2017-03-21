@@ -69,9 +69,9 @@ finallist1=sorted(finallist, key=itemgetter(1), reverse=True)
 finallist2=sorted(finallist1, key=itemgetter(0))
 
 
-#finallistreversed=list(reversed(finallist1))
+finallistreversed=list(reversed(finallist2))
 
-for x,c in finallist2:
+for x,c in finallistreversed:
         if x is not int(0):
             print(x*c)
 
