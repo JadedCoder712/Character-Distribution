@@ -59,10 +59,11 @@ finallist=[]    #creates final list in order to put tuples into
 sentence1=[x.lower() for x in sentencelist] #makes all letters lowercase
 
 #Removing unnecessary punctuation:
+"""
 for a in sentence1:
     if a is ".":
         a=""
-    
+    """
 
 #The Actual Program:
 
@@ -72,11 +73,16 @@ for letter in megalist:
     variables=(number, letter)
     finallist.append(variables)
     
-#sorting the tuple list into reverse alphabetical order, then leaving those properties in place while puttiing it order of appearance AND alphabetical order:
-finallist1=sorted(finallist, key=itemgetter(1), reverse=True)
-finallist2=sorted(finallist1, key=itemgetter(0))
 
-finallistreversed=list(reversed(finallist2))
+#sorting the tuple list into reverse alphabetical order, then leaving those properties in place while puttiing it order of appearance AND alphabetical order:
+finallist1=sorted(finallist, key=itemgetter(0,1))
+
+#finallist2=sorted(finallist1, key=itemgetter(0))
+
+#finallistreversed=list(reversed(finallist2))
+
+
+finallistreversed = list(finallist1)
 
 #creating the actual list of letters by multiplying the letters in the tuples by the amount of times they appear:
 for x,c in finallistreversed:
